@@ -6,6 +6,6 @@ import {AppComponent} from 'app/app.component';
 
 import {bootstrap} from 'angular2/platform/browser';
 
-    bootstrap(AppComponent, [HTTP_PROVIDERS,
-      ROUTER_PROVIDERS,bind(APP_BASE_HREF).toValue(location.pathname)
-    ]);
+bootstrap(AppComponent, [HTTP_PROVIDERS,
+    ROUTER_PROVIDERS,bind(APP_BASE_HREF).toValue(location.pathname)
+]);

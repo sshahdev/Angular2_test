@@ -28,6 +28,4 @@ Setup the project in any web server you like such as (IIS, Apache etc)
 # Demo
 The below is a plnkr URL for this demo project
 
-https://plnkr.co/edit/h0cr3FIj8aWcnOZBILAX
-
-Note : Bootsrap is not loaded on this url, but you can see the functionality 
+Note : Bootsrap is not loaded on this url, but you can see the functionality
