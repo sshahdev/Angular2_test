@@ -5,7 +5,6 @@ import{Home} from 'app/component/home.component';
 import{News} from 'app/component/news.component';
 import{Events} from 'app/component/events.component';
 import{MyFolder} from 'app/component/my-folder.component';
-import{SubFolder} from 'app/component/sub-folder.component';
 
 @Component({
     selector: 'my-app',
@@ -17,8 +16,7 @@ import{SubFolder} from 'app/component/sub-folder.component';
     {path: '/', name: 'Home', component: Home, useAsDefault:true},
     {path: '/news', name: 'News', component: News},
     {path: '/events', name: 'Events', component: Events},
-    {path: '/myFolder', name: 'MyFolder', component: MyFolder},
-    {path: '/subFolder', name: 'SubFolder', component: SubFolder},
+    {path: '/myFolder/:value', name: 'MyFolder', component: MyFolder},
     {path: '/**', redirectTo: ['Home']}
 ])
 export class AppComponent {

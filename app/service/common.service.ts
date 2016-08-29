@@ -38,10 +38,13 @@ export class CommonService {
         }).map(res => res.json());
     }
 
-    getSubFolder(){
+    getSubFolder(path){
+        if(path=='My Subfolder'){  //since the name in api endpoint is my-subfolder
+            path='my-subfolder';
+        }
         let headers = new Headers();
         this.createAcceptHeader(headers);
-        return this.http.get(this.plone_url+'/my-folder/my-subfolder', {
+        return this.http.get(this.plone_url+'/my-folder/'+path, {
             headers: headers
         }).map(res => res.json());
     }
